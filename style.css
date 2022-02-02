@@ -1,0 +1,364 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --theme-light: #32323D; 
+    --theme-dark: #27272F;
+
+    --thme-gray: #dbdbdb;
+}
+
+
+
+body{
+
+    background: var(--theme-light);
+}
+
+.top-nav{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--theme-dark);
+    padding: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: 5;
+}
+
+.top-nav .logo{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.top-nav .brand{
+
+    margin-left: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.top-nav .nav-links{
+
+    list-style: none;
+    margin-left: auto;
+    font-weight: 300;
+}
+
+.top-nav .nav-links li{
+
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.top-nav .nav-links li a{
+
+    color: var(--thme-gray);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.top-nav .nav-links li a:hover{
+
+   color: white;
+   cursor: pointer;
+}
+
+.main-container{
+
+    width: 100%;
+    overflow: hidden;
+    margin-top: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.card.col-02{
+
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.col{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
+    
+}
+
+.col img{
+
+    width: 80%;
+    margin-left: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+
+.col img:hover{
+
+    transform: scale(1.05);
+}
+
+.col h1{
+
+    color: white;
+}
+
+.col p{
+
+    color: var(--thme-gray);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+.btn-flex{
+
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.btn-flex a{
+
+    margin-right: 30px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--theme-dark);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-flex a:hover{
+
+    background: white;
+    color: var(--theme-dark);
+}
+
+.col .invite-us{
+
+    background: var(--theme-dark);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.col .invite-us:hover{
+
+   background: white;
+   color: var(--theme-dark);
+}
+
+.card-dark{
+
+    background: var(--theme-dark);
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-dark p{
+
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.card-dark .join-us{
+
+    background: var(--theme-light);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.card-dark .join-us:hover{
+
+   background: white;
+   border: none;
+   color: black;
+}
+
+.demo10{
+    background:#C0BFBF;
+    padding:30px;
+}
+
+/* Table Formatting*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body{
+  background: #5D3F6A;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#title{
+  text-align: center;
+  color:white;
+  font-size:30px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  
+}
+.hover-table-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+  justify-content: space-between
+  
+}
+.listing-item {
+    display: block;
+    width:fit-content;
+	margin-bottom:20px;
+    float: left;
+    background: #fff;
+    border-radius:10px;
+    z-index:0;
+	cursor:pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+    margin: 0 20px;
+    z-index: 0;
+}
+.listing-item:hover,  .listing-item.active{
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+    transform: scale(1.03);
+		-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+	z-index:2;
+
+}
+.listing-item .listing{
+    padding:20px;
+    position:relative;	
+}
+.listing-item .listing:before{
+    content:"";
+	position:absolute;
+	top:-15px;
+	left:-o-calc(50% - 15px);
+	left:-moz-calc(50% - 15px);
+	left:-webkit-calc(50% - 15px);
+	left:calc(50% - 15px);
+	border-bottom:20px solid #fff;
+	border-left:20px solid transparent;
+	border-right:20px solid transparent;
+}
+	figure.image img {
+		width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+figure.image {
+    position: relative;
+	margin: 0;
+    padding: 0;
+}
+figure.image figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 4px;
+	background: rgba(0,0,0,0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+figcaption .caption{
+	position:relative;
+	top:50%;
+	-moz-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+
+}
+figcaption h1{
+  	color:white;
+	font-weight:bold;
+  	font-size:16px;
+  text-transform: uppercase;
+}
+figcaption p{
+  color:white;
+  font-size:12px;
+}
+.listing h4 {
+   
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.listing h4:not(:last-child){
+   border-bottom: 1px solid #ccc;
+}
+.listing-item:hover figure.image figcaption{
+       background: rgba(195, 39, 43, 0.6);
+}
+
+	.listing-item {
+   display: block;
+   width: -webkit-calc(100%/3);
+   width: -moz-calc(100%/3);
+    width: calc(100%/3);
+	}
+
+
+	.hover-table-layout{
+        padding: 30px;
+	}
